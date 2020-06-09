@@ -19,5 +19,13 @@ RSpec.describe 'Api::RequestsController', type: :request do
     it 'responds with a hangout link' do
       expect(JSON.parse(response.body)['text']).to eq 'https://hangouts.google.com/hangouts/_/cihvctunmrgqdfcbriuqh2b4e4e'
     end
+
+    it 'responds with an attachment' do
+      expect(JSON.parse(response.body)).to have_key 'attachment'
+    end
+    
+    it 'containing message for the channel' do
+      expect(JSON.parse(response.body)['attachment']['text']).to eq 'Someone joined the Room.'
+    end
   end
 end
