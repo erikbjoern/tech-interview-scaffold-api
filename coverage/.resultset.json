@@ -212,15 +212,8 @@
         1,
         1,
         1,
-        6,
+        4,
         null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
         null,
         null,
         1,
@@ -248,11 +241,12 @@
       "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/app/controllers/api/requests_controller.rb": [
         1,
         1,
-        6,
+        4,
+        4,
         null,
         null
       ]
     },
-    "timestamp": 1591719465
+    "timestamp": 1591720603
   }
 }

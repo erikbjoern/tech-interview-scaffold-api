@@ -1,7 +1,8 @@
 RSpec.describe 'Api::RequestsController', type: :request do
   describe 'POST /api/requests' do
     before do
-      post '/api/requests'
+      post '/api/requests',
+        params: { user_id: "SUFSOEF" }
     end
 
     it 'responds with a 200 status' do
@@ -17,15 +18,7 @@ RSpec.describe 'Api::RequestsController', type: :request do
     end
 
     it 'responds with a hangout link' do
-      expect(JSON.parse(response.body)['text']).to eq 'https://hangouts.google.com/hangouts/_/cihvctunmrgqdfcbriuqh2b4e4e'
-    end
-
-    it 'responds with an attachment' do
-      expect(JSON.parse(response.body)).to have_key 'attachment'
-    end
-    
-    it 'containing message for the channel' do
-      expect(JSON.parse(response.body)['attachment']['text']).to eq 'Someone joined the Room.'
+      expect(JSON.parse(response.body)['text']).to eq 'Hey <@SUFSOEF>, you requested the room link: https://hangouts.google.com/hangouts/_/cihvctunmrgqdfcbriuqh2b4e4e'
     end
   end
 end
