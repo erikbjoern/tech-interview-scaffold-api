@@ -12,6 +12,10 @@ RSpec.describe 'Api::RequestsController', type: :request do
       expect(JSON.parse(response.body)).to have_key 'text'
     end
 
+    it 'has response type ephemeral' do
+      expect(JSON.parse(response.body)['response_type']).to eq 'ephemeral'
+    end
+
     it 'responds with a hangout link' do
       expect(JSON.parse(response.body)['text']).to eq 'https://hangouts.google.com/hangouts/_/cihvctunmrgqdfcbriuqh2b4e4e'
     end
