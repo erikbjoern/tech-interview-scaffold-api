@@ -186,7 +186,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
@@ -196,10 +196,57 @@
       ],
       "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/config/routes.rb": [
         1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/spec/requests/api/requests_request_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/spec/requests/api/slack_bot_requests_spec.rb": [
+        1,
+        1,
+        1,
+        4,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/Sajje/Programming/ca_projects/tech_interview_api/tech-interview-scaffold-api/app/controllers/api/requests_controller.rb": [
+        1,
+        1,
+        4,
+        4,
         null,
         null
       ]
     },
-    "timestamp": 1591361244
+    "timestamp": 1591720603
   }
 }
